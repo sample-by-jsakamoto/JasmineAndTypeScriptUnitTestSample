@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="myApp" ng-controller="mainController as ctrl">
+    <div>
+        <textarea ng-model="ctrl.message"></textarea>
+    </div>
+    <div>
+        {{ctrl.message | charCounter:140}}
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/myLib.charCounter.js"></script>
+    <script src="Scripts/myApp.js"></script>
+</body>
+</html>
